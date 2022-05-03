@@ -1,7 +1,7 @@
 <?php
 
 $hostname = "sql102.epizy.com";
-$database = "epiz_31454928_XXX";
+$database = "epiz_31454928_rifas";
 $username = "epiz_31454928";
 $password = "GEA1TmPNzz";
 
