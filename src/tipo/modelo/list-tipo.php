@@ -23,3 +23,21 @@ $totalFiltrados = $resultado->rowCount();
 $colunaOrdem = $requestData['order'][0]['column'];
 $ordem = $colunas[$colunaOrdem]['data'];
 $direcao = $requestData['order'][0]['dir'];
+
+$inicio = $requestData['start'];
+$tamanho = $requestData['length'];
+
+$sql .= " ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
+$resultado = $pdo->query($sql);
+$dados = array();
+while($row = $resultado->fetch(PDO::FETCH_ASSOC)){
+    $dados[] = array_map('utf, $row');
+}
+
+    $json_data = array(
+        "draw" => intval($requestData['draw']),
+        "recordsTotal" => intval($qtdeLinhas),
+        'data' => $dados
+    );
+
+    echo json_encode($json_data);
