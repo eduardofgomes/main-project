@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-tipo').on('click', button.btn-edit, function(e) {
+    $('#table-tipo').on('click', 'button.btn-edit', function(e) {
 
         e.preventDefault();
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
                         title: 'e-rifa',
                         text: dado.mensagem,
                         type: dado.tipo,
-                        confirmButtonText: 'Ok'
+                        confirmButtonText: 'OK'
                     })
                 }
             }

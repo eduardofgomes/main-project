@@ -19,7 +19,8 @@ $(document).ready(function() {
                 $.ajax({
                     type: 'POST',
                     dataType: 'json',
-                    assynchronous: true,
+                    assync: true,
+                    data: ID,
                     url: 'src/tipo/modelo/delete-tipo.php',
                     success: function(dados) {
                         Swal.fire({
