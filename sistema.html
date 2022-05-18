@@ -12,15 +12,15 @@
     <title>Rifas</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-        <a href="#" class="navbar-brand">
-            <img src="img/rifa.png" alt="" class="img-social" id="mylogo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-white shadow">
+        <a class="navbar-brand">
+            <img src="img/rifa.png" alt="e-rifas" width="50" height="50">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="mynav">
-            <ul class="navbar-nav">
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
@@ -31,7 +31,7 @@
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-comments-dollar"></i> Compradores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="src/tipo/visao/list-tipo.html"><i class="fa-solid fa-user"></i> Tipos Usuário</a>
+                    <a class="nav-link text-white" href="src/tipo/visao/list-tipo.html"><i class="fa-solid fa-user"></i> Tipos de acesso</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-receipt"></i> Promoção</a>
@@ -39,10 +39,8 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-arrow-down"></i> Prêmio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
-                </li>
             </ul>
+                <a class="nav-link text-white" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair do Sistema</a>
         </div>
     </nav>
 
@@ -57,7 +55,7 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/menu.js"></script>
     <script src="libs/fontawesome/js/all.js"></script>
