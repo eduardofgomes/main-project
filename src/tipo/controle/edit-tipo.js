@@ -23,6 +23,7 @@ $(document).ready(function() {
                         $('#NOME').val(dado.dados.NOME)
                         $('#ID').val(dado.dados.ID)
                     })
+                    $('.btn-save').removeAttr('data-operation', 'insert')
                     $('.btn-save').show()
                     $('#modal-tipo').modal('show')
                 } else {
