@@ -18,7 +18,7 @@
         $ID = isset($requestData['ID']) ? $requestData['ID'] : '';
         $operacao = isset($requestData['operacao']) ? $requestData['operacao'] : '';
 
-        // Verifica se é para cadastra um nvo registro
+        // Verifica se é para cadastrar um novo registro
         if($operacao == 'insert'){
             // Prepara o comando INSERT para ser executado
             try{
