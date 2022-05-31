@@ -8,7 +8,7 @@ $sql = "SELECT * FROM TIPO WHERE ID = $ID";
 
 $resultado = $pdo->query($sql);
 
-if(resultado){
+if($resultado){
     $dadosEixo = array();
     while($row = $resultado->fetch(PDO::FETCH_ASSOC)){
         $dadosEixo = array_map('utf8_encode', $row);

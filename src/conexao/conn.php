@@ -1,9 +1,16 @@
 <?php
-
+/*
+conexão online
 $hostname = "sql102.epizy.com";
 $dbname = "epiz_31454928_rifas";
 $username = "epiz_31454928";
 $password = "GEA1TmPNzz";
+*/
+
+$hostname = "localhost";
+$dbname = "rifa";
+$username = "root";
+$password = "";
 
 try{
     $pdo = new PDO('mysql:host='.$hostname.';dbname='.$dbname, $username, $password);

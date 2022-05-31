@@ -31,7 +31,7 @@ $sql .= " ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
 $resultado = $pdo->query($sql);
 $dados = array();
 while($row = $resultado->fetch(PDO::FETCH_ASSOC)){
-    $dados[] = array_map('utf, $row');
+    $dados[] = array_map(null, $row);
 }
 
     $json_data = array(
