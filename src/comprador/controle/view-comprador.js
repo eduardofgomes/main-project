@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-    $('#table-tipo').on('click', 'button.btn-view', function(e) {
+    $('#table-comprador').on('click', 'button.btn-view', function(e) {
 
         e.preventDefault();
 
@@ -17,15 +17,15 @@ $(document).ready(function() {
             dataType: 'json',
             assync: true,
             data: ID,
-            url: 'src/tipo/modelo/view-tipo.php',
+            url: 'src/comprador/modelo/view-comprador.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    $('.modal-body').load('src/tipo/visao/form-comprador.html', function() {
+                    $('.modal-body').load('src/comprador/visao/form-comprador.html', function() {
                         $('#NOME').val(dado.dados.NOME)
                         $('#NOME').attr('readonly', 'true')
                     })
                     $('.btn-save').hide()
-                    $('#modal-tipo').modal('show')
+                    $('#modal-comprador').modal('show')
                 } else {
                     Swal.fire({
                         title: 'e-rifa',

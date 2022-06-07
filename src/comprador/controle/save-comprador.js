@@ -4,7 +4,7 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        let dados = $('#form-tipo').serialize()
+        let dados = $('#form-comprador').serialize()
 
         dados += `&operacao=${$('.btn-save').attr('data-operation')}`
 
@@ -13,7 +13,7 @@ $(document).ready(function() {
             dataType: 'json',
             assync: true,
             data: dados,
-            url: 'src/tipo/modelo/save-comprador.php',
+            url: 'src/comprador/modelo/save-comprador.php',
             success: function(dados) {
                 Swal.fire({
                     title: 'e-rifa',
@@ -22,8 +22,8 @@ $(document).ready(function() {
                     confirmButtonText: 'OK'
                 })
 
-                $('#modal-tipo').modal('hide')
-                $('#table-tipo').DataTable().ajax.reload()
+                $('#modal-comprador').modal('hide')
+                $('#table-comprador').DataTable().ajax.reload()
             }
         })
     })
