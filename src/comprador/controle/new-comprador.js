@@ -5,15 +5,15 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Adicionar novo comprador de acesso')
+        $('.modal-title').append('Adicionar novo tipo de acesso')
         
-        $('.modal-body').load('src/comprador/visao/form-comprador.html')
+        $('.modal-body').load('src/tipo/visao/form-tipo.html')
 
         $('.btn-save').show()
 
         $('.btn-save').attr('data-operation', 'insert')
 
-        $('#modal-comprador').modal('show')
+        $('#modal-tipo').modal('show')
 
         
     })
@@ -21,6 +21,6 @@ $(document).ready(function() {
     $('.close, #close').click(function(e){
         e.preventDefault()
 
-        $('#modal-comprador').modal('hide')
+        $('#modal-tipo').modal('hide')
     })
 })

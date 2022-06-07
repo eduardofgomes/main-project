@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#table-comprador').on('click', 'button.btn-delete', function(e) {
+    $('#table-tipo').on('click', 'button.btn-delete', function(e) {
 
 
         e.preventDefault();
@@ -21,7 +21,7 @@ $(document).ready(function() {
                     dataType: 'json',
                     assync: true,
                     data: ID,
-                    url: 'src/comprador/modelo/delete-comprador.php',
+                    url: 'src/tipo/modelo/delete-comprador.php',
                     success: function(dados) {
                         Swal.fire({
                             title: 'e-rifa',
@@ -30,7 +30,7 @@ $(document).ready(function() {
                             confirmButtonText: 'OK'
                         })
 
-                        $('#table-comprador').DataTable().ajax.reload()
+                        $('#table-tipo').DataTable().ajax.reload()
                     }
                 })
             }

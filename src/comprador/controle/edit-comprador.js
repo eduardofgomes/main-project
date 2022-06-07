@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
-
-    $('#table-comprador').on('click', 'button.btn-view', function(e) {
+    $('#table-tipo').on('click', 'button.btn-edit', function(e) {
 
         e.preventDefault();
 
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Visualização de registro')
+        $('.modal-title').append('Visualização de registros')
 
         let ID = `ID=${$(this).attr('id')}`
 
@@ -17,15 +16,16 @@ $(document).ready(function() {
             dataType: 'json',
             assync: true,
             data: ID,
-            url: 'src/comprador/modelo/view-comprador.php',
+            url: 'src/tipo/modelo/view-comprador.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    $('.modal-body').load('src/comprador/visao/form-comprador.html', function() {
+                    $('.modal-body').load('src/tipo/visao/form-comprador.html', function() {
                         $('#NOME').val(dado.dados.NOME)
-                        $('#NOME').attr('readonly', 'true')
+                        $('#ID').val(dado.dados.ID)
                     })
-                    $('.btn-save').hide()
-                    $('#modal-comprador').modal('show')
+                    $('.btn-save').removeAttr('data-operation', 'insert')
+                    $('.btn-save').show()
+                    $('#modal-tipo').modal('show')
                 } else {
                     Swal.fire({
                         title: 'e-rifa',
@@ -36,5 +36,7 @@ $(document).ready(function() {
                 }
             }
         })
+
     })
+
 })
