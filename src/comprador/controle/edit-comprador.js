@@ -22,6 +22,7 @@ $(document).ready(function() {
                     $('.modal-body').load('src/comprador/visao/form-comprador.html', function() {
                         $('#NOME').val(dado.dados.NOME)
                         $('#ID').val(dado.dados.ID)
+                        $('#CELULAR').val(dado.dados.CELULAR)
                     })
                     $('.btn-save').removeAttr('data-operation', 'insert')
                     $('.btn-save').show()

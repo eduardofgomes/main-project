@@ -23,6 +23,8 @@ $(document).ready(function() {
                     $('.modal-body').load('src/comprador/visao/form-comprador.html', function() {
                         $('#NOME').val(dado.dados.NOME)
                         $('#NOME').attr('readonly', 'true')
+                        $('#NOME').val(dado.dados.NOME)
+                        $('#NOME').attr('readonly', 'true')
                     })
                     $('.btn-save').hide()
                     $('#modal-comprador').modal('show')
