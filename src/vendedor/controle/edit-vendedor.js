@@ -18,7 +18,7 @@ $(document).ready(function() {
             dataType: 'json',
             assync: true,
             data: ID,
-            url: 'src/vendedor/model/view-vendedor.php',
+            url: 'src/vendedor/modelo/view-vendedor.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
                     $('.modal-body').load('src/vendedor/visao/form-vendedor.html', function() {
