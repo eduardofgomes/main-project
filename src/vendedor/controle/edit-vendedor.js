@@ -44,17 +44,16 @@ $(document).ready(function() {
                                     } else {
                                         $('#TIPO_ID').append(`<option value="${result.ID}">${result.NOME}</option>`)
                                     }
-
                                 }
                             }
                         })
                     })
-                    $('.btn-save').removeAttr('data-operation', 'insert')
                     $('.btn-save').show()
+                    $('.btn-save').removeAttr('data-operation')
                     $('#modal-vendedor').modal('show')
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert
-                        title: 'Sistema de Rifas', // Título da janela SweetAlert
+                        title: 'E-RIFA', // Título da janela SweetAlert
                         text: dado.mensagem, // Mensagem retornada do microserviço
                         type: dado.tipo, // vendedor de retorno [success, info ou error]
                         confirmButtonText: 'OK'
