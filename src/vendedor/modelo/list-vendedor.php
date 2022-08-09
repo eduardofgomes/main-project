@@ -21,7 +21,7 @@
     
     $resultado = $pdo->query($sql);
     $totalFiltrados = $resultado->rowCount();
-       
+    
     $colunaOrdem = $requestData['order'][0]['column']; 
     $ordem = $colunas[$colunaOrdem]['data']; 
     $direcao = $requestData['order'][0]['dir']; 

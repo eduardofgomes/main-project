@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('#table-vendedor').on('click', 'button.btn-view', function(e) {
 
-        e.preventDefault()
+        e.preventDefault();
 
         // Alterar as informações do modal para apresentação dos dados
 
