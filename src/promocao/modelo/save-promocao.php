@@ -22,7 +22,6 @@
         if($operacao == 'insert'){
             // Prepara o comando INSERT para ser executado
             try{
-  `VALOR_RIFA` DOUBLE NOT NULL,
                 $stmt = $pdo->prepare('INSERT INTO PROMOCAO (TITULO, DESCRICAO, DATA_INICIO, DATA_FIM, DATA_SORTEIO, ARRECADACAO, VALOR_RIFA) VALUES (:a, :b, :c, :d, :e, :f, :g)');
                 $stmt->execute(array(
                     ':a' => $requestData['TITULO'],

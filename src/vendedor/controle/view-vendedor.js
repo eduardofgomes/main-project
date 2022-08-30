@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $('#table-vendedor').on('click', 'button.btn-view', function(e) {
 
@@ -65,4 +65,4 @@ $(document).ready(function() {
         })
 
     })
-})
+})*/

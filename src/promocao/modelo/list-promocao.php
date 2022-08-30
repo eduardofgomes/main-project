@@ -6,7 +6,7 @@ $requestData = $_REQUEST;
 
 $colunas = $requestData['columns'];
 
-$sql = "SELECT ID, TITULO, DESCRICAO, DATA_INICIO, DATA_FIM, DATA_SORTEIO, ARRECADACAO, VALOR_RIFA FROM COMPRADOR WHERE 1=1";
+$sql = "SELECT ID, TITULO, DESCRICAO, DATA_INICIO, DATA_FIM, DATA_SORTEIO, ARRECADACAO, VALOR_RIFA FROM PROMOCAO WHERE 1=1";
 
 $resultado = $pdo->query($sql);
 $qtdeLinhas = $resultado->rowCount();
