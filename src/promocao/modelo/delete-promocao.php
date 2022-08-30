@@ -4,7 +4,7 @@ include("../../conexao/conn.php");
 
 $ID = $_REQUEST['ID'];
 
-$sql = "DELETE FROM PROMOCAO WHERE ID = $ID";
+$sql = "DELETE FROM COMPRADOR WHERE ID = $ID";
 
 $resultado = $pdo->query($sql);
 
