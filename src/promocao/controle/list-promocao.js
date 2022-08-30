@@ -14,11 +14,15 @@ $(document).ready(function() {
             "className": 'text-center'
         },
         {
-            "data": 'NOME',
+            "data": 'TITULO',
             "className": 'text-center'
         },
         {
-            "data": 'CELULAR',
+            "data": 'DESCRICAO',
+            "className": 'text-center'
+        },
+        {
+            "data": 'VALOR_RIFA',
             "className": 'text-center'
         },
         {

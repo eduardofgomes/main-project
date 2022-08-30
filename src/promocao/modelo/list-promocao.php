@@ -6,7 +6,7 @@ $requestData = $_REQUEST;
 
 $colunas = $requestData['columns'];
 
-$sql = "SELECT ID, NOME, CELULAR FROM COMPRADOR WHERE 1=1";
+$sql = "SELECT ID, TITULO, DESCRICAO, DATA_INICIO, DATA_FIM, DATA_SORTEIO, ARRECADACAO, VALOR_RIFA FROM COMPRADOR WHERE 1=1";
 
 $resultado = $pdo->query($sql);
 $qtdeLinhas = $resultado->rowCount();
@@ -14,7 +14,7 @@ $qtdeLinhas = $resultado->rowCount();
 $filtro = $requestData['search']['value'];
 if( !empty($filtro)){
     $sql .= " AND (ID LIKE '$filtro%' ";
-    $sql .= " OR NOME LIKE '$filtro%') ";
+    $sql .= " OR TITULO LIKE '$filtro%') ";
 }
 
 $resultado = $pdo->query($sql);

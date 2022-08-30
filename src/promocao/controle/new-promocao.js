@@ -5,7 +5,7 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Adicionar novo promocao')
+        $('.modal-title').append('Adicionar nova Promoção')
         
         $('.modal-body').load('src/promocao/visao/form-promocao.html')
 
@@ -15,7 +15,6 @@ $(document).ready(function() {
 
         $('#modal-promocao').modal('show')
 
-        
     })
 
     $('.close, #close').click(function(e){
