@@ -14,7 +14,13 @@ $qtdeLinhas = $resultado->rowCount();
 $filtro = $requestData['search']['value'];
 if( !empty($filtro)){
     $sql .= " AND (ID LIKE '$filtro%' ";
-    $sql .= " OR TITULO LIKE '$filtro%') ";
+    $sql .= " OR TITULO LIKE '$filtro%' ";
+    $sql .= " OR DESCRICAO LIKE '$filtro%') ";
+    $sql .= " OR DATA_INICIO LIKE '$filtro%' ";
+    $sql .= " OR DATA_FIM LIKE '$filtro%') ";
+    $sql .= " OR DATA_SORTEIO LIKE '$filtro%' ";
+    $sql .= " OR ARRECADACAO LIKE '$filtro%') ";
+    $sql .= " OR VALOR_RIFA LIKE '$filtro%' ";
 }
 
 $resultado = $pdo->query($sql);
