@@ -29,8 +29,8 @@
                     ':c' => $requestData['DATA_INICIO'],
                     ':d' => $requestData['DATA_FIM'],
                     ':e' => $requestData['DATA_SORTEIO'],
-                    ':d' => $requestData['ARRECADACAO'],
-                    ':e' => $requestData['VALOR_RIFA']
+                    ':f' => $requestData['ARRECADACAO'],
+                    ':g' => $requestData['VALOR_RIFA']
                 ));
                 $dados = array(
                     "tipo" => 'success',
@@ -53,8 +53,8 @@
                     ':c' => $requestData['DATA_INICIO'],
                     ':d' => $requestData['DATA_FIM'],
                     ':e' => $requestData['DATA_SORTEIO'],
-                    ':d' => $requestData['ARRECADACAO'],
-                    ':e' => $requestData['VALOR_RIFA']
+                    ':f' => $requestData['ARRECADACAO'],
+                    ':g' => $requestData['VALOR_RIFA']
                 ));
                 $dados = array(
                     "tipo" => 'success',
