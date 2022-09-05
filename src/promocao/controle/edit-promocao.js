@@ -21,7 +21,7 @@ $(document).ready(function() {
             url: 'src/promocao/modelo/view-promocao.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    $('.modal-body').load('src/promocao/view/form-promocao.html', function() {
+                    $('.modal-body').load('src/promocao/visao/form-promocao.html', function() {
                         $('#TITULO').val(dado.dados.TITULO)
                         $('#DESCRICAO').val(dado.dados.DESCRICAO)
                         $('#DATA_INICIO').val(dado.dados.DATA_INICIO)
